@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeathen Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Zeathen Interactive</div>
+            <ul id="nav-links">
+                <li><a href="#main">Home</a></li> <!-- Link to the main section -->
+                <li><a href="#projects">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    
+  
+  <main id="main">
+    <section class="hero">
+        <h1>Zeathen Interactive</h1>
+        <p>Crafting innovative, minimalistic games for the future.</p>
+        <a href="#projects" class="cta-button">Explore Our Games</a> <!-- Button to scroll -->
+    </section>
+</main>
+
+
+<div class="galla">
+    <!-- Fullscreen Project Gallery Section -->
+    <section class="gallery-section" id="projects">
+        <h2 class="ourProjects" style="text-align: center; margin-bottom: 40px;">Our Games</h2>
+        <div class="polaroid-container"> <!-- Added a container for polaroid cards -->
+            <!-- Polaroid-style card for Hueniverse -->
+            <a href="https://play.google.com/store/apps/details?id=com.zeathen.huegame&hl=en" target="_blank" class="polaroid-card"> <!-- Wrap the card in an anchor tag -->
+                <div class="polaroid-image">
+                    <img src="playstore-icon.png" alt="Hueniverse Project">
+                </div>
+                <div class="polaroid-caption">
+                    Hueniverse
+                </div>
+            </a>
+            
+            <!-- Add more polaroid cards as needed -->
+            
+        </div>
+    </section>
+</div>
+
+<!-- Flexbox Container for About and Contact Sections -->
+<div class="info-container">
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>At Zeathen Interactive, we are a small team dedicated to creating minimalistic mobile games. Our goal is to provide enjoyable experiences for those who have just a few minutes to spare, whether waiting in line or taking a break. We believe in simplicity and accessibility, crafting games that are easy to pick up and play, yet engaging enough to keep you entertained during your downtime.</p>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <p>Email: <a href="mailto:zeatheninteractive@gmail.com">zeatheninteractive@gmail.com</a></p>
+</section>
+
+</div>
+
+
+    
+  
+  <footer>
+      <p>&copy; 2024 Zeathen Interactive. All rights reserved.</p>
+  </footer>
+  
+  </body>
+
+  <script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+
+</html>
